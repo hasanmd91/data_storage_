@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=Montserrat&family=Roboto&family=Satisfy&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --Background-color: cadetblue;
+  --button: rgb(28, 108, 113);
+  --text-color: white;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 2rem;
+  font-weight: 500;
+}
+p {
+  font-weight: 700;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100vw;
+}
+h1 {
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  background-color: var(--button);
+  padding: 0.8rem;
+  width: 5rem;
+  margin: 15px 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--Background-color);
+  color: aliceblue;
+}
+
+input[type="text"] {
+  border: 1px solid rgb(208, 192, 192);
+  padding: 10px;
+  border-radius: 3px;
+  margin: 10px 0px;
+}
+
+label {
+  width: 200px;
+  display: inline-block;
+}
+
+.search {
+  flex-basis: 100%;
+  border-top: 3rem solid var(--Background-color);
+  border-bottom: 3rem solid var(--Background-color);
+}
+.search > div {
+  margin-left: 5rem;
+  padding: 20px;
+}
+
+.search > input {
+  display: inline-block;
+}
+
+.inputField {
+  margin: 1rem 5rem;
+}
+.inputField > form {
+  display: inline;
+}
+
+.database {
+  margin: 1rem 5rem;
+}
+
+.table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9rem;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.table thead tr {
+  background-color: var(--Background-color);
+  color: var(--text-color);
+  text-align: left;
+  font-weight: bold;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid var(--Background-color);
+}
